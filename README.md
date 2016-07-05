@@ -5,9 +5,7 @@ iOS视频直播项目
 <a href="http://www.jianshu.com/p/b8db6c142aad">简书blog:iOS视频直播初窥:高仿<喵播APP></a>
 
 ## 项目展示
-![gif1](http://7xq6at.com1.z0.glb.clouddn.com/mb_%E7%99%BB%E5%BD%951.gif)
-![gif2](http://7xq6at.com1.z0.glb.clouddn.com/mb_%E7%9B%B4%E6%92%AD.gif)
->由于`licecap`录制的GIF失帧太严重, 都模糊掉了, 再放两张高清截图
+由于gif过大, 请移步我的blog查看gif效果图
 ![png1](http://7xq6at.com1.z0.glb.clouddn.com/mb_%E7%99%BB%E5%BD%95.png)
 ![png2](http://7xq6at.com1.z0.glb.clouddn.com/mb_%E7%9B%B4%E6%92%AD.png)
 
