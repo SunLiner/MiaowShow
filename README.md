@@ -6,7 +6,10 @@ iOS视频直播项目
 
 ## 项目展示
 
-![living](http://7xq6at.com1.z0.glb.clouddn.com/mb_living.gif)
+![living](living.gif)
+![living](mb_登录.png)
+![living](mb_直播.png)
+
 
 ## 运行方式
 下载或者clone项目, 打开`MiaowShow.xcworkspace`, 将博客中提供的`Frameworks`拖进项目. 真机运行即可.
