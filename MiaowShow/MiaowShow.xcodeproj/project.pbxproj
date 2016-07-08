@@ -12,7 +12,7 @@
 		BB219BC81D22D06C00AF44C1 /* ALinUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB219BC71D22D06C00AF44C1 /* ALinUserView.xib */; };
 		BB219BCB1D22E4C500AF44C1 /* NSObject+ALinHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB219BCA1D22E4C500AF44C1 /* NSObject+ALinHUD.m */; };
 		BB4980531D23FDC20078D725 /* ALinLiveViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7207771D1BE2C2007930D4 /* ALinLiveViewCell.m */; };
-		BB5956C41D2FF6EE004C125B /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5956C31D2FF6EE004C125B /* IJKMediaFramework.framework */; };
+		BB5956CA1D300A7A004C125B /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5956C91D300A7A004C125B /* IJKMediaFramework.framework */; };
 		BB7207751D1BDBDD007930D4 /* ALinLiveCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7207741D1BDBDD007930D4 /* ALinLiveCollectionViewController.m */; };
 		BB72077B1D1BE542007930D4 /* ALinLiveFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BB72077A1D1BE542007930D4 /* ALinLiveFlowLayout.m */; };
 		BB87BC401D25A3D4000B084D /* ALinLiveEndView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87BC3F1D25A3D4000B084D /* ALinLiveEndView.m */; };
@@ -98,7 +98,7 @@
 		BB219BC71D22D06C00AF44C1 /* ALinUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALinUserView.xib; sourceTree = "<group>"; };
 		BB219BC91D22E4C500AF44C1 /* NSObject+ALinHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ALinHUD.h"; sourceTree = "<group>"; };
 		BB219BCA1D22E4C500AF44C1 /* NSObject+ALinHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ALinHUD.m"; sourceTree = "<group>"; };
-		BB5956C31D2FF6EE004C125B /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		BB5956C91D300A7A004C125B /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		BB7207731D1BDBDD007930D4 /* ALinLiveCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinLiveCollectionViewController.h; sourceTree = "<group>"; };
 		BB7207741D1BDBDD007930D4 /* ALinLiveCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinLiveCollectionViewController.m; sourceTree = "<group>"; };
 		BB7207761D1BE2C2007930D4 /* ALinLiveViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinLiveViewCell.h; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5956C41D2FF6EE004C125B /* IJKMediaFramework.framework in Frameworks */,
+				BB5956CA1D300A7A004C125B /* IJKMediaFramework.framework in Frameworks */,
 				BBE540F61D0F274400BF723E /* libz.tbd in Frameworks */,
 				70D249A48322E2E32E1F0507 /* libPods-MiaowShow.a in Frameworks */,
 			);
@@ -256,10 +256,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB5956C21D2FF6EE004C125B /* Frameworks */ = {
+		BB5956C81D300A7A004C125B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BB5956C31D2FF6EE004C125B /* IJKMediaFramework.framework */,
+				BB5956C91D300A7A004C125B /* IJKMediaFramework.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 		BBE540E31D0F26F300BF723E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BB5956C21D2FF6EE004C125B /* Frameworks */,
+				BB5956C81D300A7A004C125B /* Frameworks */,
 				C769A8A51D29FCB2001EFB5C /* Profile */,
 				C757830C1D0FB31700CD856B /* Network */,
 				C75783041D0FA60500CD856B /* Other */,

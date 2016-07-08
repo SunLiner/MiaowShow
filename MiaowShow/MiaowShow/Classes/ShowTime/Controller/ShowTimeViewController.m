@@ -85,6 +85,9 @@
 }
 // 关闭直播
 - (IBAction)close {
+    if (self.session.state == LFLivePending || self.session.state == LFLiveStart){
+        [self.session stopLive];
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
