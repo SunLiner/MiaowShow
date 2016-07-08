@@ -1,0 +1,1 @@
+../../../LMGPUImage/framework/Source/GPUImageWeakPixelInclusionFilter.h

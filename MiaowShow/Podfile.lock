@@ -15,11 +15,23 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - BarrageRenderer (1.8.0)
-  - GPUImage (0.1.7)
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - LFLiveKit (1.6):
+    - CocoaAsyncSocket (~> 7.4.1)
+    - LMGPUImage (~> 0.1.9)
+    - pili-librtmp (~> 1.0.2)
+  - LMGPUImage (0.1.9)
   - Masonry (1.0.1)
   - MBProgressHUD (0.9.2)
-  - MJExtension (3.0.10)
-  - MJRefresh (3.1.6)
+  - MJExtension (3.0.11)
+  - MJRefresh (3.1.10)
+  - pili-librtmp (1.0.3)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -27,7 +39,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - BarrageRenderer (~> 1.8.0)
-  - GPUImage (~> 0.1.7)
+  - LFLiveKit (~> 1.6)
   - Masonry (~> 1.0.1)
   - MBProgressHUD (~> 0.9.2)
   - MJExtension (~> 3.0.10)
@@ -37,13 +49,16 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BarrageRenderer: f99b461b58cd34538eef10e547b8ec2f300a0e24
-  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  LFLiveKit: a8a868f23d32f57fb0195a3cdc9e5899a1c0945e
+  LMGPUImage: 8e2e5d0f7065953eb7812de842db4c87d59abf09
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
-  MJRefresh: 5c69f11e8bde0664e15326d2e61f61e103c6545f
+  MJExtension: f9ae6ddc0f1c482c3c9af750280ccebd14381958
+  MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
+  pili-librtmp: 50faa17413c635cca5ceccb1a8f9f6acc6587a45
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: 8a73d2965ebd08fb1c8e0c1be32caa9ac31a2bcf
+PODFILE CHECKSUM: e059e1c8afa760524bb0aa2e3ea280afac53f111
 
 COCOAPODS: 1.0.1

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 ALin. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import <GPUImage.h>
 
 @interface ALinGPUBeautifyFilter : GPUImageFilterGroup
 

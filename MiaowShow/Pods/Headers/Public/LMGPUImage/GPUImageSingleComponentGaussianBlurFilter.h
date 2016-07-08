@@ -1,0 +1,1 @@
+../../../LMGPUImage/framework/Source/GPUImageSingleComponentGaussianBlurFilter.h

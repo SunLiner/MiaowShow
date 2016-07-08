@@ -59,12 +59,29 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="759-4I-0yW"/>
                                 </constraints>
-                                <state key="normal" title="开始直播"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="开始直播">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="结束直播">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="living:" destination="CHd-Zk-oDU" eventType="touchUpInside" id="BDG-zd-5pN"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态: 未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rB-ON-vBE">
+                                <rect key="frame" x="261" y="90" width="78" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.15367353719999999" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zcq-sx-xF0" firstAttribute="centerY" secondItem="psl-dI-iu1" secondAttribute="centerY" id="8X2-VU-fSH"/>
+                            <constraint firstItem="0rB-ON-vBE" firstAttribute="centerX" secondItem="Pa0-G2-Uks" secondAttribute="centerX" id="OPO-pw-lAy"/>
                             <constraint firstItem="psl-dI-iu1" firstAttribute="leading" secondItem="zcq-sx-xF0" secondAttribute="trailing" constant="20" id="akL-qy-7LW"/>
                             <constraint firstItem="d2d-Yz-6W6" firstAttribute="leading" secondItem="Pa0-G2-Uks" secondAttribute="leading" constant="20" id="bGk-N4-UYc"/>
                             <constraint firstItem="d2d-Yz-6W6" firstAttribute="top" secondItem="Pa0-G2-Uks" secondAttribute="top" constant="30" id="cfS-WY-7lU"/>
@@ -72,11 +89,14 @@
                             <constraint firstAttribute="trailing" secondItem="A7T-qI-jff" secondAttribute="trailing" constant="40" id="fIP-AQ-nMq"/>
                             <constraint firstAttribute="trailing" secondItem="psl-dI-iu1" secondAttribute="trailing" constant="20" id="g9c-gT-yTQ"/>
                             <constraint firstItem="A7T-qI-jff" firstAttribute="leading" secondItem="Pa0-G2-Uks" secondAttribute="leading" constant="40" id="mzW-kn-sMO"/>
+                            <constraint firstItem="0rB-ON-vBE" firstAttribute="top" secondItem="d2d-Yz-6W6" secondAttribute="bottom" constant="30" id="rsX-4r-76W"/>
                             <constraint firstItem="FR2-aV-q86" firstAttribute="top" secondItem="A7T-qI-jff" secondAttribute="bottom" constant="60" id="sOK-EB-FzN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="beautifulBtn" destination="d2d-Yz-6W6" id="dZs-k0-kRr"/>
+                        <outlet property="livingBtn" destination="A7T-qI-jff" id="6r3-xd-FmH"/>
+                        <outlet property="statusLabel" destination="0rB-ON-vBE" id="VEf-YU-cMn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nk-Be-tQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
