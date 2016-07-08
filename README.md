@@ -11,6 +11,8 @@ iOS视频直播项目
 ## 项目blog讲解地址
 <a href="http://www.jianshu.com/p/b8db6c142aad">简书blog:iOS视频直播初窥:高仿<喵播APP></a>
 
+<a href="http://www.jianshu.com/p/8ea016b2720e">快速集成iOS基于RTMP的视频推流</a>
+
 ## 项目展示
 
 ![living](living.gif)
