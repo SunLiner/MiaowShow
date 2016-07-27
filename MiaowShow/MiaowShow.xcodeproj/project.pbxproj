@@ -91,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E10B8601D48711500BC4D27 /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 		343A1FB4B109EE1106C1EA18 /* Pods-MiaowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaowShow/Pods-MiaowShow.release.xcconfig"; sourceTree = "<group>"; };
 		6372155D4C47F383711AE057 /* libPods-MiaowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiaowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB219BC41D22D06200AF44C1 /* ALinUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinUserView.h; sourceTree = "<group>"; };
@@ -593,6 +594,7 @@
 			children = (
 				C75783051D0FA61300CD856B /* ALinConstant.h */,
 				C75783061D0FA61300CD856B /* ALinConstant.m */,
+				0E10B8601D48711500BC4D27 /* CommonMacros.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";

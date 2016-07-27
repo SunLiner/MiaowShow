@@ -30,6 +30,7 @@
 #import <MJExtension.h>
 #import "UIViewController+SLExtension.h"
 #import "NSObject+ALinHUD.h"
+#import "CommonMacros.h"
 
 #endif /* PrefixHeader_pch */
 

@@ -58,13 +58,19 @@ static NSString * const reuseIdentifier = @"ALinLiveViewCell";
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[ALinLiveViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    WEAK_REF(self)
+    
     ALinRefreshGifHeader *header = [ALinRefreshGifHeader headerWithRefreshingBlock:^{
-        [self.collectionView.mj_header endRefreshing];
-        self.currentIndex++;
-        if (self.currentIndex == self.lives.count) {
-            self.currentIndex = 0;
+        STRONG_REF(self_)
+        if (self_) {
+            [self_.collectionView.mj_header endRefreshing];
+            self_.currentIndex++;
+            if (self_.currentIndex == self_.lives.count) {
+                self_.currentIndex = 0;
+            }
+            [self_.collectionView reloadData];
         }
-        [self.collectionView reloadData];
     }];
     header.stateLabel.hidden = NO;
     [header setTitle:@"下拉切换另一个主播" forState:MJRefreshStatePulling];
@@ -103,12 +109,25 @@ static NSString * const reuseIdentifier = @"ALinLiveViewCell";
         relateIndex += 1;
     }
     cell.relateLive = self.lives[relateIndex];
+    
+    WEAK_REF(self)
+    
     [cell setClickRelatedLive:^{
-        self.currentIndex += 1;
-        [self.collectionView reloadData];
+        STRONG_REF(self_)
+        if (self_) {
+            self_.currentIndex += 1;
+            [self_.collectionView reloadData];
+        }
     }];
     return cell;
 }
+
+#pragma mark - dealloc
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 #pragma mark <UICollectionViewDelegate>
 
