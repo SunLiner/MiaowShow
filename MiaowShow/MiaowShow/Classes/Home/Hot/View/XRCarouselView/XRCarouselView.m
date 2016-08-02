@@ -158,7 +158,6 @@
     self.currImageView.image = _images[_currIndex];
     self.describeLabel.text = _describeArray[_currIndex];
     self.pageControl.numberOfPages = _images.count;
-    [self layoutSubviews];
 }
 
 
