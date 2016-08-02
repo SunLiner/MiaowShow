@@ -63,13 +63,13 @@ static NSString * const reuseIdentifier = @"ALinLiveViewCell";
     
     ALinRefreshGifHeader *header = [ALinRefreshGifHeader headerWithRefreshingBlock:^{
         STRONG_REF(self_)
-        if (self_) {
-            [self_.collectionView.mj_header endRefreshing];
-            self_.currentIndex++;
-            if (self_.currentIndex == self_.lives.count) {
-                self_.currentIndex = 0;
+        if (self__) {
+            [self__.collectionView.mj_header endRefreshing];
+            self__.currentIndex++;
+            if (self__.currentIndex == self__.lives.count) {
+                self__.currentIndex = 0;
             }
-            [self_.collectionView reloadData];
+            [self__.collectionView reloadData];
         }
     }];
     header.stateLabel.hidden = NO;
@@ -114,9 +114,9 @@ static NSString * const reuseIdentifier = @"ALinLiveViewCell";
     
     [cell setClickRelatedLive:^{
         STRONG_REF(self_)
-        if (self_) {
-            self_.currentIndex += 1;
-            [self_.collectionView reloadData];
+        if (self__) {
+            self__.currentIndex += 1;
+            [self__.collectionView reloadData];
         }
     }];
     return cell;
