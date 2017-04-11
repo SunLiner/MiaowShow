@@ -122,8 +122,23 @@
 
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+// - (void)scrollViewDidScroll:(UIScrollView *)scrollView
+// {
+//     CGFloat page = scrollView.contentOffset.x / ALinScreenWidth;
+//     CGFloat offsetX = scrollView.contentOffset.x / ALinScreenWidth * (self.selectedView.width * 0.5 - Home_Seleted_Item_W * 0.5 - 15);
+//     self.selectedView.underLine.x = 15 + offsetX;
+//     if (page == 1 ) {
+//         self.selectedView.underLine.x = offsetX + 10;
+//     }else if (page > 1){
+//         self.selectedView.underLine.x = offsetX + 5;
+//     }
+//     self.selectedView.selectedType = (int)(page + 0.5);
+// }
+
+// 当手动滑动的时候触发 scrollView的scrollViewDidEndDecelerating 而scrollViewDidScroll方法，不然会发现指示器的下划线滑动错误
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+    // 滑动 scrollView 时顶部指示器也滑动
     CGFloat page = scrollView.contentOffset.x / ALinScreenWidth;
     CGFloat offsetX = scrollView.contentOffset.x / ALinScreenWidth * (self.selectedView.width * 0.5 - Home_Seleted_Item_W * 0.5 - 15);
     self.selectedView.underLine.x = 15 + offsetX;
