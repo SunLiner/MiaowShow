@@ -1,1 +1,0 @@
-../../../LMGPUImage/framework/Source/GPUImageRGBClosingFilter.h

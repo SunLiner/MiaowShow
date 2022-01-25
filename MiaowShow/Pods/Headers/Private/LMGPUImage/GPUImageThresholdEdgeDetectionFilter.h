@@ -1,1 +1,0 @@
-../../../LMGPUImage/framework/Source/GPUImageThresholdEdgeDetectionFilter.h
